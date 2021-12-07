@@ -44,7 +44,7 @@ public class ArticleServiceImpl implements ArticleService {
         for (Article record :records){
             articleVoList.add(copy(record));
         }
-        return null;
+        return articleVoList;
     }
 
     private ArticleVo copy(Article article){
